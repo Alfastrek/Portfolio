@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
-  description: "Welcome to Aradhya Shukla's portfolio! I am a passionate full-stack developer and AI enthusiast, specializing in creating scalable, efficient, and user-friendly web applications.",
+  description:
+    "Welcome to Aradhya Shukla's portfolio! I am a passionate full-stack developer and AI enthusiast, specializing in creating scalable, efficient, and user-friendly web applications.",
   category: "portfolio",
   keywords: [
     "Next.js",
@@ -52,7 +53,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     title: "Aradhya Shukla - Portfolio",
-    description: "Showcasing projects, skills, and experiences of Aradhya Shukla, a full-stack developer and AI enthusiast.",
+    description:
+      "Showcasing projects, skills, and experiences of Aradhya Shukla, a full-stack developer and AI enthusiast.",
     siteName: siteConfig.name,
     images: [
       {
@@ -66,7 +68,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aradhya Shukla - Portfolio",
-    description: "Discover the projects, skills, and experiences of Aradhya Shukla, a full-stack developer and AI enthusiast.",
+    description:
+      "Discover the projects, skills, and experiences of Aradhya Shukla, a full-stack developer and AI enthusiast.",
     images: "https://aradhya.site/assets/social-preview-image.png",
     creator: siteConfig.author,
   },
@@ -85,9 +88,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Metadata is automatically injected by Next.js */}
-      </head>
+      <head></head>
       <body className={`${poppins.className} bg-color relative`}>
         <ThemeProvider
           attribute="class"

@@ -28,7 +28,7 @@ export const projectList = [
       "Designed and built a dynamic report dashboard interface to organize and display CSV reports.",
       "Implemented features like folder-based tabs, filtering, and responsive UI for better usability.",
     ],
-    projectUrl: "https://alphadash.aradhya.site/",
+    projectUrl: "https://assignment.aradhya.site/",
     gitHubUrl: "https://github.com/Alfastrek/Alpha-dash",
     year: "Nov 2024",
     languages: [

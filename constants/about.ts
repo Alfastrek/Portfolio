@@ -16,7 +16,7 @@ export const about = {
   personalInfo:
     "My journey began as an Electronics and Communication Engineering student, where I developed a passion for Python and JavaScript. I soon delved into full-stack development, machine learning, and DevOps, honing my skills with hands-on projects and internships.",
   casualLife:
-    "When I'm not coding, you can find me documenting my life through mini vlogs, working out, or exploring new tech trends. I also enjoy watching anime, movies, and occasionally stargazing or diving into astrophotography.",
+    "When I'm not coding, you can find me documenting my life through mini vlogs, working out, or exploring tech trends.",
 };
 
 export const skills = [
