@@ -27,9 +27,18 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: "Welcome to Aradhya Shukla's portfolio! I am a passionate full-stack developer and AI enthusiast, specializing in creating scalable, efficient, and user-friendly web applications.",
   category: "portfolio",
-  keywords: ["Next.js", "React", "Tailwind CSS", "ShadCn", "Radix UI"],
+  keywords: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "ShadCn",
+    "Portfolio",
+    "Full-stack Developer",
+    "AI Enthusiast",
+    "Web Development",
+  ],
   authors: [
     {
       name: siteConfig.author,
@@ -42,16 +51,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: "Aradhya Shukla - Portfolio",
+    description: "Showcasing projects, skills, and experiences of Aradhya Shukla, a full-stack developer and AI enthusiast.",
     siteName: siteConfig.name,
-    images: siteConfig.ogImage,
+    images: [
+      {
+        url: "https://aradhya.site/assets/social-preview-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aradhya Shukla Portfolio Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: siteConfig.ogImage,
+    title: "Aradhya Shukla - Portfolio",
+    description: "Discover the projects, skills, and experiences of Aradhya Shukla, a full-stack developer and AI enthusiast.",
+    images: "https://aradhya.site/assets/social-preview-image.png",
     creator: siteConfig.author,
   },
   icons: {
@@ -69,6 +85,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Metadata is automatically injected by Next.js */}
+      </head>
       <body className={`${poppins.className} bg-color relative`}>
         <ThemeProvider
           attribute="class"

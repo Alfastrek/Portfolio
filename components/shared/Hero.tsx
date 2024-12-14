@@ -18,14 +18,14 @@ const Landing = () => {
           <Link href="mailto:aradhya1703@gmail.com" passHref>
             <ShimmerButton className="shadow-2l">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Resume
+                Contact
               </span>
             </ShimmerButton>
           </Link>
           <Link href="/resume.pdf" target="_blank" passHref>
             <ShimmerButton className="shadow-2l">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Contact
+                Resume
               </span>
             </ShimmerButton>
           </Link>
