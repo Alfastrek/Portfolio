@@ -1,3 +1,3 @@
-## MinimalFolio
+## PortFolio
 
 My personal portfolio
