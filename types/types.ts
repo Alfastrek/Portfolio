@@ -5,7 +5,7 @@ export type Languages = {
 export type Project = {
   logo: string;
   title: string;
-  description: string;
+  description: string[];
   projectUrl?: string;
   gitHubUrl?: string;
   year: string;
