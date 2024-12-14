@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-color {
+    @apply dark:bg-[#020202];
+  }
+
+  .wrapper {
+    @apply max-w-5xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .content-z-index {
+    @apply z-30;
+  }
+
+  .custom-hover {
+    @apply hover:bg-neutral-800/5 dark:hover:bg-neutral-100/5 !important;
+  }
+
+  .heading-text {
+    @apply text-5xl max-md:text-4xl font-bold;
+  }
+
+  .active {
+    @apply bg-neutral-800/5 dark:bg-neutral-100/5;
+  }
+
+  .background-color {
+    @apply bg-white dark:bg-neutral-950;
+  }
+
+  .dim-text {
+    @apply text-neutral-500 dark:text-neutral-400;
+  }
+
+  .hover-invert-colors {
+    @apply hover:fill-white dark:hover:fill-black hover:bg-current transition-all duration-300 ease-in-out;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s forwards;
+}
