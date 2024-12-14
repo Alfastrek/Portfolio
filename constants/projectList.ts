@@ -39,7 +39,7 @@ export const projectList = [
         name: "Javascript",
       },
       {
-        name: "NodeJS",
+        name: "CSV-Grids",
       },
     ],
   },
