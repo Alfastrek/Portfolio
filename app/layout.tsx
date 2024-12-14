@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     creator: siteConfig.author,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.webp",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },

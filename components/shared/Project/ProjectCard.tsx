@@ -38,69 +38,71 @@ export function ProjectCard({
   languages,
 }: Project) {
   return (
-    <Card
-      className="custom-hover inline-block mb-6 
-    hover:scale-105 transition duration-500
-    "
-    >
-      <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
-        <div className="space-y-1">
-          <CardTitle> {title} </CardTitle>
-          <CardDescription>{description}</CardDescription>
-        </div>
-        <div className="h-full justify-self-end">
-          {logo ? (
-            <Image
-              src={logo}
-              width={75}
-              height={75}
-              loading="lazy"
-              alt={`${title} logo`}
-              style={{ width: "75px", height: "75px" }}
-            />
-          ) : null}
-        </div>
-      </CardHeader>
-      <CardContent>
-        <div className="flex justify-between">
-          <div className="flex space-x-4 text-sm text-muted-foreground">
-            <div className="grid grid-cols-3 max-sm:grid-cols-2 gap-4">
-              {languages.map((language, i) => (
-                <div key={i} className="flex items-center">
-                  <CircleIcon
-                    className={`mr-1 h-3 w-3 ${
-                      colorVariants[language.name as keyof typeof colorVariants]
-                    }`}
-                  />
-                  {language.name}
-                </div>
-              ))}
+    <div className="custom-hover inline-block mb-6 hover:scale-105 transition duration-500">
+      <Link href={projectUrl} target="_blank" passHref>
+        <Card>
+          <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
+            <div className="space-y-1">
+              <CardTitle>{title}</CardTitle>
+              <CardDescription>{description}</CardDescription>
+            </div>
+            <div className="h-full justify-self-end">
+              {logo ? (
+                <Image
+                  src={logo}
+                  width={1920}
+                  height={1080}
+                  loading="lazy"
+                  alt={`${title} logo`}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              ) : null}
+            </div>
+          </CardHeader>
+          <CardContent>
+            <div className="flex justify-between">
+              <div className="flex space-x-4 text-sm text-muted-foreground">
+                <div className="grid grid-cols-3 max-sm:grid-cols-2 gap-4">
+                  {languages.map((language, i) => (
+                    <div key={i} className="flex items-center">
+                      <CircleIcon
+                        className={`mr-1 h-3 w-3 ${
+                          colorVariants[
+                            language.name as keyof typeof colorVariants
+                          ]
+                        }`}
+                      />
+                      {language.name}
+                    </div>
+                  ))}
 
-              <div className="flex items-center col-span-2">
-                <CalendarIcon className="mr-2" />
-                {year}
+                  <div className="flex items-center col-span-2">
+                    <CalendarIcon className="mr-2" />
+                    {year}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                {gitHubUrl ? (
+                  <Link href={gitHubUrl} target="_blank" passHref>
+                    <Button variant="ghost" size="icon" className="text-2xl">
+                      <GitHubLogoIcon className="w-6 h-6" />
+                    </Button>
+                  </Link>
+                ) : null}
+                {projectUrl ? (
+                  <Link href={projectUrl} target="_blank" passHref>
+                    <Button variant="ghost" size="icon" className="text-2xl">
+                      <GlobeIcon className="w-6 h-6 text-blue-500" />
+                    </Button>
+                  </Link>
+                ) : null}
               </div>
             </div>
-          </div>
-
-          <div className="flex items-center">
-            {gitHubUrl ? (
-              <Link href={gitHubUrl} target="_blank">
-                <Button variant="ghost" size="icon" className="text-2xl">
-                  <GitHubLogoIcon className="w-6 h-6" />
-                </Button>
-              </Link>
-            ) : null}
-            {projectUrl ? (
-              <Link href={projectUrl} target="_blank">
-                <Button variant="ghost" size="icon" className="text-2xl">
-                  <GlobeIcon className="w-6 h-6 text-blue-500" />
-                </Button>
-              </Link>
-            ) : null}
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+          </CardContent>
+        </Card>
+      </Link>
+    </div>
   );
 }
