@@ -3,7 +3,7 @@ export const projectList = [
     logo: "/assets/project-logo/devcraft.webp",
     title: "DevCraft",
     description: [
-      "Built a real-time collaborative code editing platform with secure synchronization using WebSocket.",
+      "Built a real-time secure collaborative code editing platform using WebSocket.",
       "Multiple Coding Languages supported with Compilation features.",
     ],
     projectUrl: "https://devcraft.aradhya.site/",

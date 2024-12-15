@@ -95,13 +95,18 @@ export function ProjectCard({
               {gitHubUrl ? (
                 <Link href={gitHubUrl} target="_blank" passHref>
                   <Button variant="ghost" size="icon" className="text-2xl">
-                    <GitHubLogoIcon className="w-6 h-6" />
+                    <GitHubLogoIcon className="w-6 h-6 highlight" />
                   </Button>
                 </Link>
               ) : null}
               {projectUrl ? (
                 <Link href={projectUrl} target="_blank" passHref>
-                  <Button variant="ghost" size="icon" className="text-2xl">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-2xl"
+                    style={{ marginLeft: "15px" }}
+                  >
                     <svg
                       data-slot="icon"
                       fill="none"
@@ -110,7 +115,7 @@ export function ProjectCard({
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
-                      className="w-6 h-6 text-blue-500"
+                      className="w-8 h-8 text-blue-500 svg-highlight"
                     >
                       <path
                         strokeLinecap="round"
