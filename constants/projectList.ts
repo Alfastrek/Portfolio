@@ -43,6 +43,28 @@ export const projectList = [
       },
     ],
   },
+  {
+    logo: "/assets/project-logo/dashpro.png",
+    title: "DashPro",
+    description: [
+      "Data Visualization Dashboard for multiple paramenters with real-time updates.",
+      "Functional UI using Bootstrap and JavaScript for better user experience.",
+    ],
+    projectUrl: "",
+    gitHubUrl: "https://github.com/Alfastrek/DaSHPRO",
+    year: "Apr 2024",
+    languages: [
+      {
+        name: "Django",
+      },
+      {
+        name: "Python",
+      },
+      {
+        name: "Javascript",
+      },
+    ],
+  },
 
   {
     logo: "/assets/project-logo/anonymousfeedback.webp",
@@ -85,6 +107,29 @@ export const projectList = [
       },
       {
         name: "scikit-learn",
+      },
+    ],
+  },
+
+  {
+    logo: "/assets/project-logo/readstack.png",
+    title: "ReadStack",
+    description: [
+      "Robust bookstore platform with user and admin panels, order processing, and inventory control.",
+      "Efficient admin operations and seamless user interactions, including cart management",
+    ],
+    projectUrl: "",
+    gitHubUrl: "https://github.com/Alfastrek/Readstack",
+    year: "May 2024",
+    languages: [
+      {
+        name: "Javscript",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "MySQL",
       },
     ],
   },

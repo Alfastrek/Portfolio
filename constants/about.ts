@@ -16,7 +16,7 @@ export const about = {
   personalInfo:
     "My journey began as an Electronics and Communication Engineering student, where I developed a passion for Python and JavaScript. I soon delved into full-stack development, machine learning, and DevOps, honing my skills with hands-on projects and internships.",
   casualLife:
-    "When I'm not coding, you can find me documenting my life through mini vlogs, working out, or exploring tech trends.",
+    "When I'm not coding, you can find me documenting my life through mini vlogs on Youtube, working out, or exploring tech trends on X.",
 };
 
 export const skills = [
@@ -131,5 +131,17 @@ export const socials = [
   {
     name: "GitHub",
     url: "https://github.com/Alfastrek",
+  },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@AlfaStrekFitness", // Replace with your actual YouTube channel URL
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/alfastrek", // Replace with your actual Instagram URL
+  },
+  {
+    name: "X",
+    url: "https://x.com/alfatechdev", // Replace with your actual Twitter URL
   },
 ];
