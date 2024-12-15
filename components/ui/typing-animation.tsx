@@ -12,7 +12,7 @@ interface TypingAnimationProps {
 
 export default function TypingAnimation({
   text,
-  duration = 10,
+  duration = 50,
   className,
 }: TypingAnimationProps) {
   const [displayedText, setDisplayedText] = useState<string>("");
