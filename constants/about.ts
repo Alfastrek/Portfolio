@@ -58,11 +58,11 @@ export const skills = [
   },
   {
     name: "Django",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+    icon: "https://static.djangoproject.com/img/logos/django-logo-negative.png",
   },
   {
     name: "Flask",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+    icon: "/assets/tech-logo/Flask.png",
   },
   {
     name: "Azure",
@@ -70,7 +70,7 @@ export const skills = [
   },
   {
     name: "AWS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
   },
 ];
 

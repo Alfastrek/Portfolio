@@ -216,3 +216,7 @@
 .glow {
   animation: fadeInGlow 5s forwards;
 }
+
+.lighter-bg {
+  background-color: #f9f9f9; /* Light grey background color */
+}
