@@ -265,10 +265,8 @@
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
-    opacity: 0; /* Fully transparent */
   }
   10% {
-    opacity: 1; /* Fully opaque */
   }
   50% {
     background-position: 100% 50%;
