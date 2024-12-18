@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "https://aradhya.site/assets/social-preview-image.png",
+        url: "/social-preview-image.png",
         width: 1200,
         height: 630,
         alt: "Aradhya Shukla Portfolio Preview",
