@@ -225,28 +225,50 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-.text-gradient2 {
-  background: linear-gradient(270deg, #00c6ff, #0072ff);
-  background-size: 600% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.animated-gradient {
+.text-gradient3 {
   background: linear-gradient(270deg, #ff00cc, #333399, #ff00cc);
   background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 8s ease infinite;
-  transition: all 1s ease;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.font-display {
-  transition: all 1s ease;
+.text-gradient2 {
+  background: linear-gradient(
+    270deg,
+    #00ccff,
+    #ff66ff,
+    #00ccff
+  ); /* Brighter colors */
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.initial-font {
+  color: black; /* Initial font color */
+  transition:
+    color 1s ease,
+    background 1s ease;
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #ff00cc, #333399, #ff00cc);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+  transition: opacity 3s ease;
+  opacity: 0; /* Start with opacity 0 */
 }
 
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
+    opacity: 0; /* Fully transparent */
+  }
+  10% {
+    opacity: 1; /* Fully opaque */
   }
   50% {
     background-position: 100% 50%;

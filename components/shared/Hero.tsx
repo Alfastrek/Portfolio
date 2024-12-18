@@ -12,7 +12,7 @@ const Landing = () => {
         <h1 className="text-black/70 dark:text-white/70 text-9xl max-md:text-6xl font-bold mb-4 glow">
           {heading}
         </h1>
-        <h1 className="text-black/70 dark:text-white/70 text-5xl max-md:text-4xl font-bold mb-4 text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+        <h1 className="text-black/70 dark:text-white/70 text-5xl max-md:text-4xl font-bold mb-4 ">
           <TypingAnimation text="Full-Stack Developer and Tech Enthusiast ." />
         </h1>
         <div className="flex justify-center space-x-4 mb-4 mt-20">

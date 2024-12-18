@@ -3,6 +3,7 @@ export type Languages = {
 };
 
 export type Project = {
+  key: string;
   logo: string;
   title: string;
   description: string[];

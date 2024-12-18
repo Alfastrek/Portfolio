@@ -11,11 +11,11 @@ const Projects = () => {
         Explore some of the projects I worked on in the past.
       </p>
       <div className="w-full columns-1 gap-6 md:columns-2">
-        {projectList.map((project, index) => (
+        {projectList.map((project) => (
           <ProjectCard
-            key={index}
+            key={project.title}
             logo={project.logo}
-            title={<span className="text-gradient2">{project.title}</span>}
+            title={project.title}
             description={project.description}
             projectUrl={project.projectUrl}
             gitHubUrl={project.gitHubUrl}

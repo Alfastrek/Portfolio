@@ -57,7 +57,9 @@ export function ProjectCard({
       <div className="relative z-10 p-4">
         <CardHeader className="grid place-items-center space-y-0">
           <div className="text-center">
-            <CardTitle>{title}</CardTitle>
+            <CardTitle>
+              <span className="text-gradient2">{title}</span>
+            </CardTitle>
             <CardDescription className="mt-2 text-left">
               <ul className="list-disc pl-5 text-white">
                 {description.map((point, index) => (
