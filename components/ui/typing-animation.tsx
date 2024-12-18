@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -12,7 +12,7 @@ interface TypingAnimationProps {
 
 export default function TypingAnimation({
   text,
-  duration = 50,
+  duration = 25,
   className,
 }: TypingAnimationProps) {
   const [displayedText, setDisplayedText] = useState<string>("");
@@ -31,16 +31,26 @@ export default function TypingAnimation({
     return () => {
       clearInterval(typingEffect);
     };
-  }, [duration, i]);
+  }, [duration, i, text]);
+
+  const parts = displayedText.split(" ");
 
   return (
-    <h1
-      className={cn(
-        "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm",
-        className
-      )}
-    >
-      {displayedText ? displayedText : text}
-    </h1>
+    <span>
+      {parts.map((part, index) => (
+        <React.Fragment key={index}>
+          {part === "tech" && <br />}
+          <span
+            className={`transition-all duration-1000 ${
+              part === "Developer" || part === "Enthusiast"
+                ? "animated-gradient text-[2.5rem] font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm"
+                : "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm"
+            }`}
+          >
+            {part}{" "}
+          </span>
+        </React.Fragment>
+      ))}
+    </span>
   );
 }

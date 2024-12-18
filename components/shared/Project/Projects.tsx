@@ -15,7 +15,7 @@ const Projects = () => {
           <ProjectCard
             key={index}
             logo={project.logo}
-            title={project.title}
+            title={<span className="text-gradient2">{project.title}</span>}
             description={project.description}
             projectUrl={project.projectUrl}
             gitHubUrl={project.gitHubUrl}

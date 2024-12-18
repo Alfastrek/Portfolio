@@ -41,7 +41,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="rounded-full border-current border-2 w-16 h-16 flex-center fill-current hover-invert-colors animate-border"
+            className="rounded-full border-current border-2 w-16 h-16 flex-center fill-current transition-transform duration-300 hover:scale-125 animate-border"
           >
             <GetIcons iconName={social.name} />
           </a>
@@ -49,7 +49,12 @@ const Footer = () => {
       </div>
 
       <div className="col-span-2 pt-10">
-        <h3 className="my-2">Designed & Built by {myName}.</h3>
+        <h3 className="my-2">
+          Designed & Built by{" "}
+          <span className="italic text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+            {myName}
+          </span>
+        </h3>
         <p className="mb-6">&copy; {currentYear}</p>
       </div>
     </footer>

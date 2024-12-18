@@ -220,3 +220,38 @@
 .lighter-bg {
   background-color: #f9f9f9; /* Light grey background color */
 }
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text-gradient2 {
+  background: linear-gradient(270deg, #00c6ff, #0072ff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animated-gradient {
+  background: linear-gradient(270deg, #ff00cc, #333399, #ff00cc);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 8s ease infinite;
+  transition: all 1s ease;
+}
+
+.font-display {
+  transition: all 1s ease;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

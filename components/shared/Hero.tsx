@@ -5,15 +5,15 @@ import ShimmerButton from "@/components/ui/shimmer-button";
 import TypingAnimation from "@/components/ui/typing-animation";
 
 const Landing = () => {
-  const { heading, heading2 } = hero;
+  const { heading } = hero;
   return (
     <div className="text-center content-z-index h-dvh flex items-center">
       <div className="content-z-index relative">
         <h1 className="text-black/70 dark:text-white/70 text-9xl max-md:text-6xl font-bold mb-4 glow">
           {heading}
         </h1>
-        <h1 className="text-black/70 dark:text-white/70 text-5xl max-md:text-4xl font-bold mb-4">
-          <TypingAnimation text={heading2} />
+        <h1 className="text-black/70 dark:text-white/70 text-5xl max-md:text-4xl font-bold mb-4 text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+          <TypingAnimation text="Full-Stack Developer and Tech Enthusiast ." />
         </h1>
         <div className="flex justify-center space-x-4 mb-4 mt-20">
           <Link href="mailto:aradhya1703@gmail.com" passHref>
