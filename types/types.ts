@@ -1,7 +1,7 @@
 export type Languages = {
   name: string;
 };
-
+// types
 export type Project = {
   key: string;
   logo: string;
